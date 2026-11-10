@@ -77,4 +77,36 @@ a {
   font-size: 0.95rem;
 }
 
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  min-height: 250px;
+}
+
+#box {
+  background-color: #6c5ce7;
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(108, 92, 231, 0.08);
+  position: relative;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  min-height: 350px;
+}
+.gallery-container img {
+  display: none;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(108, 92, 231, 0.08);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  min-height: 350px;
+
+  img {
+    display: none;
+    max-width: 350px;
+    height: auto;
+    border-radius: $radius;
+    box-shadow: $shadow-soft;
+  }
+}
