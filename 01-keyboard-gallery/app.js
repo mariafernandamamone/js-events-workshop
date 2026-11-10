@@ -7,7 +7,6 @@ const img = document.getElementById("randomImg");
 document.addEventListener("keydown", function (event) {
   let key = parseInt(event.key);
   if (key >= 0 && key <= 9) {
-    const src = "img/img" + key + ".png";
     img.src = `img/img${key}.png`;
     img.style.display = 'block';
   } else {
