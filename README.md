@@ -26,6 +26,9 @@ Each exercise lives inside its own isolated directory to maintain clean JS scope
 * `07-typing-speed-race/` - Key Tapping Speed Challenge
 * `08-memory-game/` - 6x5 Color Matching Pairs Game
 
+## 🚀 Live Demo
+[View Live Demo](https://mariafernandamamone.github.io/js-events-workshop/)
+
 ## 👤 Author
 **María Fernanda Mamone**
 * GitHub: [@mariafernandamamone](https://github.com/mariafernandamamone)
