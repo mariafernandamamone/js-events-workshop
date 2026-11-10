@@ -10,7 +10,7 @@ document.addEventListener("keydown", function (event) {
     img.src = `img/img${key}.png`;
     img.style.display = 'block';
   } else {
-    img.setAttribute("src", "");
+    img.src = '';
     img.style.display = 'none';
   }
 });
