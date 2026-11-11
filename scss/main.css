@@ -78,20 +78,25 @@ a {
 }
 
 .box-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  min-height: 250px;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  margin: 2rem auto;
+  border: 2px dashed #e2d9f3;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 #box {
   background-color: #6c5ce7;
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
   box-shadow: 0 10px 20px rgba(108, 92, 231, 0.08);
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .gallery-container {

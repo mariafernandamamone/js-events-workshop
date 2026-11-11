@@ -1,18 +1,23 @@
 @use 'variables' as *;
 
 .box-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  min-height: 250px;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  margin: 2rem auto;
+  border: 2px dashed $border-color;
+  border-radius: $radius;
+  position: relative;
+  overflow: hidden;
 }
 
 #box {
   background-color: $primary-violet;
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
   box-shadow: $shadow-soft;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
