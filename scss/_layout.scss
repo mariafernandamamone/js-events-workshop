@@ -72,3 +72,26 @@ body {
     }
   }
 }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem; // Separa el botón del contenedor del ejercicio
+  padding: 0.6rem 1.2rem;
+  color: $primary-violet;
+  background-color: $card-bg;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: $shadow-soft;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $primary-violet;
+    color: #ffffff;
+    transform: translateX(-3px); // Da un efecto dinámico hacia la izquierda al pasar el mouse
+  }
+}
