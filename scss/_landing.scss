@@ -1,23 +1,5 @@
 @use 'variables' as *;
 
-.header {
-  margin-bottom: 2.5rem;
-  text-align: center;
-
-  h1 {
-    color: $primary-violet;
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    color: $text-muted;
-    font-size: 1.1rem;
-    max-width: 650px;
-    margin: 0 auto;
-  }
-}
-
 .exercises-grid {
   display: flex;
   flex-wrap: wrap;
@@ -27,35 +9,53 @@
   padding: 0;
 
   .card {
-    background: $card-bg;
-    border: 1px solid $border-color;
+    background-color: $card-bg;
     border-radius: $radius;
-    padding: 1.5rem;
     box-shadow: $shadow-soft;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    width: calc(33.333% - 1rem);
-    min-width: 260px;
-    max-width: 380px;
+    
+    // Responsive width: 1 column on mobile, up to 3 columns on desktop
+    width: 100%;
+
+    @media (min-width: 650px) {
+      width: calc(50% - 0.75rem);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(33.333% - 1rem);
+    }
+
+    // Direct styling for inner link to remove default browser underline and colors
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card__title {
+      color: $primary-violet;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+    }
+
+    .card__description {
+      color: $text-muted;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 0;
+      text-decoration: none;
+    }
 
     &:hover {
       transform: translateY(-4px);
-      box-shadow: 0 14px 25px rgba(108, 92, 231, 0.15);
-    }
-
-    a {
-      display: block;
-    }
-
-    &__title {
-      color: $primary-violet;
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    &__description {
-      color: $text-muted;
-      font-size: 0.95rem;
+      box-shadow: 0 12px 24px rgba(108, 92, 231, 0.15);
     }
   }
 }
