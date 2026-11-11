@@ -1,0 +1,26 @@
+{
+  "name": "4-ejercicios",
+  "version": "1.0.0",
+  "description": "A modular, responsive web suite featuring interactive vanilla JavaScript exercises focused on DOM manipulation, keyboard listeners, mouse events, and dynamic UI updates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"sass --watch scss/main.scss:css/style.css\" \"browser-sync start --server --files '*.html, css/*.css, **/*.js'\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariafernandamamone/js-events-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariafernandamamone/js-events-workshop/issues"
+  },
+  "homepage": "https://github.com/mariafernandamamone/js-events-workshop#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.7",
+    "sass": "^1.108.2"
+  }
+}

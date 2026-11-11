@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../mi-favicon.svg">
+    <title>Dynamic Paragraph</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Dynamic Paragraph</h1>
+        <p>Append typed characters into a paragraph in real-time with a clear button to reset the content.</p>
+    </header>
+
+    <main class="main-container">
+        <a href="../index.html" class="back-link">← Back to Menu</a>
+        
+        <section class="paragraph-container">
+            <div class="input-group">
+            <input type="text" id="charInput" placeholder="Type something here..." autocomplete="off">
+            <button id="resetBtn" type="button">Clear</button>
+            </div>
+
+            <div class="output-box">
+            <p id="dynamicParagraph">Your text will appear here in real-time...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <img src="../mi-favicon.svg" alt="Logo Fer Mamone" class="footer-logo">
+            <p>Developed with 💜 by <span>Maria Fernanda Mamone</span></p>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
