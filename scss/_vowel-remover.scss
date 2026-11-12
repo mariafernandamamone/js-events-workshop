@@ -1,0 +1,56 @@
+@use 'variables' as *;
+
+.vowel-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: $card-bg;
+  border-radius: $radius;
+  box-shadow: $shadow-soft;
+  border: 1px solid $border-color;
+
+  .text-box {
+    padding: 1rem 1.25rem;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    margin-bottom: 1.25rem;
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: $text-dark;
+      word-break: break-word;
+    }
+  }
+
+  // Row container for the 5 vowel buttons
+  .vowel-buttons {
+    display: flex;
+    gap: 0.75rem;
+
+    .vowel-btn {
+      flex: 1;
+      padding: 0.75rem 0.5rem;
+      background-color: $primary-violet;
+      color: #ffffff;
+      border: none;
+      border-radius: $radius;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease, opacity 0.2s ease;
+
+      &:hover:not(:disabled) {
+        background-color: $primary-hover;
+      }
+
+      &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

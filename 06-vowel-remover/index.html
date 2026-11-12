@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../mi-favicon.svg">
+    <title>Vowel Remover</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Vowel Remover</h1>
+        <p>Remove all occurrences of a specific vowel from a text paragraph upon clicking its corresponding button.</p>
+    </header>
+
+    <main class="main-container">
+        <a href="../index.html" class="back-link">← Back to Menu</a>
+        
+        <section class="vowel-container">
+            <div class="text-box">
+                <p id="targetParagraph">
+                JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior, and all major web browsers have a dedicated engine to execute it.
+                </p>
+            </div>
+
+            <!-- Vowel buttons group -->
+            <div class="vowel-buttons">
+                <button type="button" class="vowel-btn" data-vowel="a">A</button>
+                <button type="button" class="vowel-btn" data-vowel="e">E</button>
+                <button type="button" class="vowel-btn" data-vowel="i">I</button>
+                <button type="button" class="vowel-btn" data-vowel="o">O</button>
+                <button type="button" class="vowel-btn" data-vowel="u">U</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <img src="../mi-favicon.svg" alt="Logo Fer Mamone" class="footer-logo">
+            <p>Developed with 💜 by <span>Maria Fernanda Mamone</span></p>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
