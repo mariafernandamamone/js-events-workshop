@@ -179,7 +179,7 @@ body {
   box-shadow: 0 10px 20px rgba(108, 92, 231, 0.08);
 }
 
-.list-container {
+.list-wrapper {
   width: 100%;
   max-width: 500px;
   margin: 2rem auto;
@@ -189,39 +189,7 @@ body {
   box-shadow: 0 10px 20px rgba(108, 92, 231, 0.08);
   border: 1px solid #e2d9f3;
 }
-
-.input-group {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.input-group input[type=text] {
-  flex: 1;
-  padding: 0.75rem 1rem;
-  border: 1px solid #e2d9f3;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  outline: none;
-  transition: border-color 0.2s ease;
-}
-.input-group input[type=text]:focus {
-  border-color: #6c5ce7;
-}
-.input-group button {
-  padding: 0.75rem 1.25rem;
-  background-color: #6c5ce7;
-  color: #ffffff;
-  border: none;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-.input-group button:hover {
-  background-color: #5b4bc4;
-}
-
-.interactive-list {
+.list-wrapper .interactive-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -229,7 +197,7 @@ body {
   flex-direction: column;
   gap: 0.75rem;
 }
-.interactive-list li {
+.list-wrapper .interactive-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,7 +207,7 @@ body {
   border: 1px solid #e2d9f3;
   word-break: break-word;
 }
-.interactive-list li button {
+.list-wrapper .interactive-list li button {
   background: transparent;
   border: none;
   color: #636e72;
@@ -250,9 +218,56 @@ body {
   border-radius: 4px;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
-.interactive-list li button:hover {
+.list-wrapper .interactive-list li button:hover {
   color: #e74c3c;
   background-color: rgba(231, 76, 60, 0.1);
+}
+.list-wrapper button#sortButton {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.65rem 1.25rem;
+  background-color: transparent;
+  color: #6c5ce7;
+  border: 1.5px solid #6c5ce7;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.list-wrapper button#sortButton:hover {
+  background-color: #6c5ce7;
+  color: #ffffff;
+}
+.list-wrapper .input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+.list-wrapper .input-group input[type=text] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2d9f3;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.list-wrapper .input-group input[type=text]:focus {
+  border-color: #6c5ce7;
+}
+.list-wrapper .input-group button {
+  padding: 0.75rem 1.25rem;
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.list-wrapper .input-group button:hover {
+  background-color: #5b4bc4;
 }
 
 /*# sourceMappingURL=style.css.map */

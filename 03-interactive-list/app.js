@@ -1,10 +1,11 @@
 // === Interactive & Sortable List ===
 
-// Dynamically add items via prompt input and remove items using a close button on each list item.
+// Sort items alphabetically, dynamically add items via user input, and remove items using a close button on each list item.
 
 // DOM Elements
 const itemInput = document.getElementById("itemInput");
 const addButton = document.getElementById("addButton");
+const sortButton = document.getElementById("sortButton");
 const itemList = document.getElementById("itemList");
 
 // Function to handle adding a new list item
@@ -39,6 +40,22 @@ function addListItem() {
   itemInput.value = '';
 }
 
+// Function to sort existing list items alphabetically (A-Z)
+function orderList() {
+  // Convert NodeList into a real Array to use .sort()
+  const items = Array.from(itemList.querySelectorAll('li'));
+
+  // Compare text inside each span alphabetically
+  items.sort((a, b) => {
+    const textA = a.querySelector('span').textContent;
+    const textB = b.querySelector('span').textContent;
+    return textA.localeCompare(textB);
+  });
+
+  // Re-append sorted items to the DOM (moves existing nodes without duplicating)
+  items.forEach(li => itemList.appendChild(li));
+}
+
 // Event Listeners
 
 // Trigger item addition on button click
@@ -50,3 +67,6 @@ itemInput.addEventListener('keydown', function(event) {
     addListItem();
   }
 });
+
+// Trigger alphabetical sorting on sort button click
+sortButton.addEventListener('click', orderList);

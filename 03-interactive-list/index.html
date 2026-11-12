@@ -11,20 +11,25 @@
 
     <header class="main-header">
         <h1>Interactive & Sortable List</h1>
-        <p>Dynamically add items via prompt input and remove items using a close button on each list item.</p>
+        <p>Sort items alphabetically, dynamically add items via user input, and remove items using a close button on each list item.</p>
     </header>
 
     <main class="main-container">
+        <!-- Navigation link back to main menu -->
         <a href="../index.html" class="back-link">← Back to Menu</a>
-        
-        <section class="list-wrapper">
-            <div class="input-group">
-            <input type="text" id="itemInput" placeholder="Type a new item..." autocomplete="off">
-            <button id="addButton" type="button">Add Item</button>
-            </div>
 
-            <!-- Empty list ready to receive dynamic li items -->
+        <section class="list-wrapper">
+            <!-- Dynamic unordered list container -->
             <ul id="itemList" class="interactive-list"></ul>
+
+            <!-- Alphabetical sorting control -->
+            <button id="sortButton" type="button" class="btn-sort">Sort A-Z</button>
+
+            <!-- Input group placed at the bottom to add new items -->
+            <div class="input-group">
+                <input type="text" id="itemInput" placeholder="Type a new item..." autocomplete="off">
+                <button id="addButton" type="button">Add Item</button>
+            </div>
         </section>
     </main>
 
