@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../mi-favicon.svg">
+    <title>Typing Speed Race</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Typing Speed Race</h1>
+        <p>Test your left vs. right hand typing speed by repeatedly pressing [F] and [J] to race the green and red bars to 500px.</p>
+    </header>
+
+    <main class="main-container">
+        <a href="../index.html" class="back-link">← Back to Menu</a>
+        
+        <section class="race-container">
+            <!-- Green bar group -->
+            <div class="bar-group">
+                <span class="bar-label">Left Hand — Press <kbd>F</kbd></span>
+                <div class="track">
+                <div id="green"></div>
+                </div>
+            </div>
+
+            <!-- Red bar group -->
+            <div class="bar-group">
+                <span class="bar-label">Right Hand — Press <kbd>J</kbd></span>
+                <div class="track">
+                <div id="red"></div>
+                </div>
+            </div>
+
+            <p id="winnerMessage" class="winner-message"></p>
+            <button id="resetBtn" type="button" class="btn-reset">Restart Race</button>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <img src="../mi-favicon.svg" alt="Logo Fer Mamone" class="footer-logo">
+            <p>Developed with 💜 by <span>Maria Fernanda Mamone</span></p>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
