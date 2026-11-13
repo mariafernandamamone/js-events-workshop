@@ -4,9 +4,6 @@ A modular, responsive web suite featuring interactive vanilla JavaScript exercis
 
 Built with a clean SASS architecture featuring a custom lilac & violet design system.
 
-## 🚀 Live Demo
-*(Link to GitHub Pages will be placed here once deployed)*
-
 ## 🛠️ Tech Stack & Architecture
 * **Frontend Logic:** Vanilla JavaScript (ES6+)
 * **Styling & Design System:** SASS / SCSS (Modular architecture using 7-1 pattern principles: variables, layout, landing, component modules)
