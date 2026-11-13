@@ -448,4 +448,80 @@ body {
   color: #ffffff;
 }
 
+.memory-container {
+  width: 100%;
+  max-width: 540px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(108, 92, 231, 0.08);
+  border: 1px solid #e2d9f3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.memory-container .game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.memory-container .game-header .status-badge {
+  padding: 0.35rem 0.75rem;
+  background-color: #f7f5fb;
+  border: 1px solid #e2d9f3;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6c5ce7;
+}
+.memory-container .memory-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.65rem;
+}
+.memory-container .memory-grid .memory-card {
+  aspect-ratio: 1/1;
+  background-color: #3b3054;
+  border-radius: 8px;
+  border: 2px solid rgba(108, 92, 231, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.25s ease, border-color 0.2s ease;
+}
+.memory-container .memory-grid .memory-card:hover:not(.matched) {
+  transform: scale(1.04);
+}
+.memory-container .memory-grid .memory-card.drag-over {
+  border-color: #6c5ce7;
+  transform: scale(1.06);
+}
+.memory-container .memory-grid .memory-card.matched {
+  cursor: default;
+  opacity: 0.9;
+}
+.memory-container .win-message {
+  margin: 0;
+  min-height: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #6c5ce7;
+}
+.memory-container .btn-reset {
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  background-color: transparent;
+  color: #6c5ce7;
+  border: 1.5px solid #6c5ce7;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.memory-container .btn-reset:hover {
+  background-color: #6c5ce7;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
